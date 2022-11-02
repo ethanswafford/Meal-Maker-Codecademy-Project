@@ -19,6 +19,9 @@
 // function body empty
 // for now.
 
+// In the body of the setter method, create an if statement that checks if mealToCheck is a string. 
+// If it is, return the object’s _meal property with mealToCheck assigned as the value.
+
 
 
 
@@ -27,15 +30,16 @@ let menu = {
     _meal: '',
     _price: 0,
     set meal(mealToCheck) {
+        if (typeof mealToCheck === 'string') {
+            return menu.meal = mealToCheck;
+        }
 
     }
-
 }
+
+
 /* menu._meal = 3;
  menu._price = 'tree fiddy';
  console.log(menu); */
 
-
-
-
-console.log("CONNECTED");
+console.log('CONNECTED');
