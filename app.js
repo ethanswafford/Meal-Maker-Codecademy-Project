@@ -31,7 +31,7 @@ let menu = {
     _price: 0,
     set meal(mealToCheck) {
         if (typeof mealToCheck === 'string') {
-            return menu.meal = mealToCheck;
+            return this.meal = mealToCheck;
         }
 
     }
