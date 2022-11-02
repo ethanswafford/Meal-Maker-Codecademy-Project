@@ -19,17 +19,26 @@
 // function body empty
 // for now.
 
-// In the body of the setter method, create an if statement that checks if mealToCheck is a string. 
+// In the body of the setter method, create an if statement that checks if mealToCheck is a string.
 // If it is, return the object’s _meal property with mealToCheck assigned as the value.
 
-// Utilizing the same procedures as above, use the set keyword to create a price setter with priceToCheck as a parameter. 
+// Utilizing the same procedures as above, use the set keyword to create a price setter with priceToCheck as a parameter.
 // This method should make sure the value associated with _price is always a number.
 
+// Below the menu object, set the values of _meal and _price using the newly created setter methods.
+// Then, console.log() the menu object to check their functionality.
+
+// Now it’s time to safely return the values of the _meal and _price properties in a readable form. 
+// Instead of directly accessing the properties, we can use a getter method that proactively 
+// checks if a meal and price have been properly set, before returning the values.
+// Below the setters, use the get keyword to create a todaysSpecial method.Leave the
+// function body empty
+// for now.
 
 
 
 let menu = {
-    _meal: '',
+    _menu: '',
     _price: 0,
     set meal(mealToCheck) {
         if (typeof mealToCheck === 'string') {
@@ -40,12 +49,15 @@ let menu = {
     set price(priceToCheck) {
         if (typeof priceToCheck === 'number')
             return this._price = priceToCheck;
+    },
+    get todaysSpecial() {
+
     }
 }
 
 
-/* menu._meal = 3;
- menu._price = 'tree fiddy';
- console.log(menu); */
+menu._meal = 'markum dancems';
+menu._price = 3;
+console.log(menu);
 
 console.log('CONNECTED');
