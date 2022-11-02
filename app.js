@@ -14,6 +14,10 @@
 // Then, below the new assignments, console.log() the menu object to see how not type checking these values could cause confusion
 // for a website visitor!
 
+// To safely reassign the two menu properties, we can add setters that type check the values being assigned.
+// Below the properties, use the set keyword to create a meal setter method with mealToCheck as a parameter.Leave the
+// function body empty
+// for now.
 
 
 
@@ -22,10 +26,14 @@
 let menu = {
     _meal: '',
     _price: 0,
+    set meal(mealToCheck) {
+
+    }
+
 }
-menu._meal = 3;
-menu._price = 'tree fiddy';
-console.log(menu);
+/* menu._meal = 3;
+ menu._price = 'tree fiddy';
+ console.log(menu); */
 
 
 
