@@ -22,6 +22,8 @@
 // In the body of the setter method, create an if statement that checks if mealToCheck is a string. 
 // If it is, return the object’s _meal property with mealToCheck assigned as the value.
 
+// Utilizing the same procedures as above, use the set keyword to create a price setter with priceToCheck as a parameter. 
+// This method should make sure the value associated with _price is always a number.
 
 
 
@@ -33,7 +35,11 @@ let menu = {
         if (typeof mealToCheck === 'string') {
             return this.meal = mealToCheck;
         }
+    },
 
+    set price(priceToCheck) {
+        if (typeof priceToCheck === 'number')
+            return this._price = priceToCheck;
     }
 }
 
