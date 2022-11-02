@@ -58,6 +58,8 @@ let menu = {
     get todaysSpecial() {
         if (this._meal && this._price) {
             return `Todays special is ${this._meal}for ${this._price}.`
+        } else {
+            'Meal or price was not set correctly.'
         }
     }
 }
