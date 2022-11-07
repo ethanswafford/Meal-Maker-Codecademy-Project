@@ -67,6 +67,6 @@ let menu = {
 
 menu._meal = 'markum dancems';
 menu._price = 3;
-console.log(menu);
+console.log(menu.todaysSpecial);
 
 console.log('CONNECTED');
